@@ -24,8 +24,7 @@ public class HrmTestMain {
 
 		WebDriver driver = Utility.getDriver(url);
 		Thread.sleep(1000);
-		log.info("Element name is " + Constant.USERNAME + " , value is : "+userName);
-		log.info("Element name is " + Constant.PASSWORD + " , value is : "+password);
+		
 		driver.findElement(By.name(Constant.USERNAME)).sendKeys(userName);
 		driver.findElement(By.name(Constant.PASSWORD)).sendKeys(password);
 
