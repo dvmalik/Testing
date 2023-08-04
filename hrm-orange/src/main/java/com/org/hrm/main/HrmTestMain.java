@@ -5,7 +5,6 @@ import java.util.logging.Logger;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 
 import com.org.hrm.cons.Constant;
 import com.org.hrm.util.Utility;
