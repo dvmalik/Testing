@@ -27,11 +27,9 @@ public class HrmTestMain {
 		
 		driver.findElement(By.name(Constant.USERNAME)).sendKeys(userName);
 		driver.findElement(By.name(Constant.PASSWORD)).sendKeys(password);
-
-		WebElement element = driver
-				.findElement(By.className("oxd-button oxd-button--medium oxd-button--main orangehrm-login-button"));
-		element.click();
-		driver.quit();
+		Thread.sleep(1000);
+		
+        driver.findElement(By.xpath(Constant.LOGINXPATH)).click();
 	}
 
 }
