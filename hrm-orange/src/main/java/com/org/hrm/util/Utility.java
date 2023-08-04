@@ -23,4 +23,13 @@ public class Utility {
 	public static void setupLogFilePath(Logger logger , String fileName) throws SecurityException, IOException {
 		logger.addHandler(new FileHandler(fileName) );
 	}
+	
+	public static void printStatus(boolean isTrue , String testCaseName) {
+		if (isTrue==true) {
+			System.out.println(testCaseName+ ": PASS");
+		}
+		else {
+			System.out.println(testCaseName +": FAIL");
+		}
+	}
 }
